@@ -1,0 +1,90 @@
+/* --------- Static Web Design --------- */
+#notify h1.notification {
+  width: fit-content;
+  
+  position: fixed;
+  display: flex;
+  z-index: 100;
+  justify-content: left;
+  align-items: center;
+  border-radius: 3px;
+  user-select: none;
+  box-shadow: +1px +1px 1px black,
+              +1px -1px 1px black,
+              -1px +1px 1px black,
+              -1px -1px 1px black;
+}
+
+#notify h1.notification span.notify-theme {
+  margin: 0 15px;
+  background: transparent;
+  text-shadow:+1px +1px 1px black,
+              +1px -1px 1px black,
+              -1px -1px 1px black,
+              -1px +1px 1px black;
+}
+
+#notify h1.notification span.notify-theme i.fas {
+  color: white;
+}
+
+#notify h1.notification span.notify-title {
+  margin-right: 5px;
+  text-shadow: +1px +1px 1px #fff3;
+}
+
+/* --------- Dynamic Web Design --------- */
+/* Notification Final Position */
+#notify h1.notification.top    {top:    20px; transform: translateY(-150px);}
+
+/* Notification Motion Type */
+#notify h1.notification.invoked.popTop   {animation: POP_TOP   2s cubic-bezier(1,0,0,1) 0s alternate forwards;}
+
+@keyframes POP_TOP {
+  000% {transform: translateY(-150px);}
+  080% {transform: translateY(+00px);}
+  100% {transform: translateY(+00px);}
+}
+@keyframes POP_RIGHT {
+  000% {transform: translateX(+350px);}
+  080% {transform: translateX(+00px);}
+  100% {transform: translateX(+00px);}
+}
+@keyframes POP_DOWN {
+  000% {transform: translateY(+150px);}
+  080% {transform: translateY(+00px);}
+  100% {transform: translateY(+00px);}
+}
+@keyframes POP_LEFT {
+  000% {transform: translateX(-350px);}
+  080% {transform: translateX(+00px);}
+  100% {transform: translateX(+00px);}
+}
+
+/* --- */
+#notify h1.notification span.notify-theme:hover {
+  cursor: pointer;
+  animation: flicker 0.3s ease 0s infinite forwards alternate;
+}
+
+@keyframes flicker {
+  from {
+    scale: 1.0;
+    text-shadow:+1px +1px 1px black,
+                +1px -1px 1px black,
+                -1px -1px 1px black,
+                -1px +1px 1px black;
+  }
+  to {
+    scale: 1.1;
+    text-shadow:+1px +1px 2px black,
+                +1px -1px 2px black,
+                -1px -1px 2px black,
+                -1px +1px 2px black;
+  }
+}
+
+#notify h1:not(.invoked) {
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}

@@ -1,0 +1,8 @@
+In case you want to run this software on your own, you will need a self-hosted monero node. After you download the monero
+source code and synchronize your computer with the monero blockchain, enter the source code folder run the following commands:
+
+$ monerod.exe
+$ monero-wallet-cli.exe --use-english-language-names
+$ monero-wallet-rpc.exe --daemon-address http://localhost:18081 --rpc-bind-port 38084 --wallet-file <WALLET NAME> --password <WALLET PASSWORD> --disable-rpc-login
+
+NOTE: You first need a wallet file to initiate your own Monero RPC Server, which you must make via the monero-wallet-cli.exe program.
