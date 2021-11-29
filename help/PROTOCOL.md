@@ -32,7 +32,7 @@ The monero will return to the owner (Bob) after the transaction is mined (~30 mi
 ### <u>Alex's Hashlock</u>:
 Now remains to solve the issues of how Alex will receive the XMR metadata. In an HTLC (Hash & Time-Locked Contract), both funds are locked with the same secret password, which is invented and revealed when the user that initiates the trade claims his promised assets. This implies that the other user must watch the blockchain his assets are being claimed on for the revelation of that information.
 
-However, the monero blockchain is deeply-seated in privacy and is not easy to observe. Hence, it is only natural to place the burden of the initiative on Bob, who will claim ethereum. Therefire, it is necessary that Alex's ether must first be claimed by Bob, thus revealing the hashlock secret, which will allow Alex to claim Bob's monero.
+However, the monero blockchain is deeply-seated in privacy and is not easy to observe. Hence, it is only natural to place the burden of the initiative on Bob, who will claim ethereum. Therefore, it is necessary that Alex's ether must first be claimed by Bob, thus revealing the hashlock secret, which will allow Alex to claim Bob's monero.
 
 As we know, this secret must be the monero metadata, which via aforemetioned means will be timelocked to Bob. The revelation step can takes no special consideration beyond that. The metadata will be hashed (for example, with SHA256) by Bob, passed as the secret to Alex, who will lock his ETH with it. When Bob claims Alex's ETH, he reveals the metadata to do so, allowing Alex to use it and claim XMR.
 
