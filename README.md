@@ -1,4 +1,4 @@
-# Archeactive ETH-XMR Cross-Chain Atomic Swaps Live On Main net
+# ETH-XMR Cross-Chain Atomic Swaps Live On Main net
 Prototype ReactJS Application that features a custom-made Monero(XMR) & Ethereum(ETH) Wallet Code written in Javascript, featuring functionalities allowing them to transact in a decentralized, atomic-swap manner.
 
 The interface is very basic since it is only meant to be a PoC for the validity of the underlying cryptocurrency wallet code to enable XCAS between monero and another currency. A production-grade version that will be featured in a demo soon to come will feature advanced security to ensure the privacy of its users.
