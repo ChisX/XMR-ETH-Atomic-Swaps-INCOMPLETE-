@@ -1,4 +1,4 @@
-# XMR-ETH XCAS - Shyswap Protocol Specification
+# XMR-ETH XCAS - Atomic Swaps Protocol Specification
 
 ## <u>Premise</u>:
 One user (let's call him Alex) has ETH and wants XMR. Another (call him Bob) has XMR and wants ETH. This protocol will describe some technical points within a process that allows Alex and Bob to trade for their desired currencies at an agreed-upon rate in a decentralize manner, making use of Cross-Chain Atomic Swap Technology.
