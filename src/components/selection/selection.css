@@ -1,0 +1,9 @@
+.selection {
+  min-width: 200px;
+  text-align: left;
+}
+
+.selection img {
+  max-width: 25px;
+  max-height: 25px;
+}
